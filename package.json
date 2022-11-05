@@ -1,0 +1,59 @@
+{
+  "name": "pxtofr",
+  "displayName": "Px2Fr",
+  "description": "Pix to Fr - Build your grid layout quickly and easily by first defining your layout in pixels and then converting it to fr to make your layout responsive and proportionate. ",
+  "version": "0.0.1",
+  "author": {
+    "name": "Felipe Pasqua Rodrigues"
+  },
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "images/icon.png",
+  "activationEvents": [
+    "onCommand:pxtofr.convertpxtofr"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pxtofr.convertpxtofr",
+        "title": "Convert px to fr",
+        "when": "editorHasSelection"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "pxtofr.convertpxtofr",
+          "group": "1_modification",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.73.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "^8.26.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.8.4",
+    "@vscode/test-electron": "^2.2.0"
+  }
+}
