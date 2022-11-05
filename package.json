@@ -3,6 +3,7 @@
   "displayName": "Px2Fr",
   "description": "Pix to Fr - Build your grid layout quickly and easily by first defining your layout in pixels and then converting it to fr to make your layout responsive and proportionate. ",
   "version": "0.0.1",
+  "publisher": "FelipePasquaRodrigues",
   "author": {
     "name": "Felipe Pasqua Rodrigues"
   },
