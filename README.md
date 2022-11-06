@@ -12,3 +12,7 @@ registered by the extension. You can keybind the command too, in this demo i use
 * Press "CTRL + SHIT + P"
 * The command will apear as "Convert px to fr"
 * Click on the gear icon and then binded it.
+
+## Download link
+
+You can download this extension [Here](https://marketplace.visualstudio.com/items?itemName=FelipePasquaRodrigues.pxtofr)
